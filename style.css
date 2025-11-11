@@ -1,0 +1,146 @@
+:root{
+--Orange500: hsl(25, 97%, 53%);
+
+/* Neutral */
+--Grey500: hsl(217, 12%, 63%);
+--Grey900: hsl(213, 19%, 18%);
+--Grey950: hsl(216, 12%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass',sans-serif;
+}
+html{
+    font-size: 15px;
+}
+#feedback-form{
+    display: flex;
+}
+main{
+    background-color: var(--Grey950);
+    min-height: 100vh;
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: var(--Grey900);
+    padding: 1.3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem 0;
+    border-radius: 1rem;
+}
+img{
+    padding: 12px;
+    background-color: hsl(214, 21%, 21%) ;
+    border-radius: 20px;
+}
+p{
+    color: var(--Grey500);
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li a{
+    background-color: hsl(215, 20%, 25%);
+    padding: 0.85rem 1.15rem;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: bold;
+}
+ul > li:first-child a {
+    padding: 0.85rem 1.27rem;
+}
+a:hover{
+    background-color: white;
+    color: var(--Grey900);
+}
+a.clicked{
+    background-color: var(--Orange500);
+    color: var(--Grey900);
+}
+button{
+    padding: 1rem 0;
+    border-radius: 100px;
+    background-color: var(--Orange500);
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 80px rgba(26, 22, 22, 0.822);
+}
+button:hover{
+    background-color: white;
+    letter-spacing: 2px;
+}
+#thanks-message{
+    display: none;
+    text-align: center;
+    gap: 0.7rem 0;
+}
+.thanks-image > img{
+    width: 50%;
+    border-radius: none;
+    background-color: transparent;
+}
+#rated{
+    color: var(--Orange500);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+span{
+    background-color: hsl(214, 21%, 21%);
+    padding: 0.5rem;
+    border-radius: 100px;
+}
+@media screen and (min-width: 500px) {
+    section{
+        width: 50%;
+    }
+    ul{
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 770px) {
+    img{
+        padding: 1rem;
+        border-radius: 100px;
+    }
+    #feedback-form{
+        width: 30%;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+    ul{
+        justify-content: space-between;
+    }
+    #thanks-message{
+        padding: 0.7rem;
+        width: 30%;
+        gap: 0.5rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    html{
+        font-size: 18px;
+    }
+    section{
+        width: 25%;
+        padding: 2.5rem;
+    }
+}
