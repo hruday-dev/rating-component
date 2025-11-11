@@ -1,5 +1,5 @@
-const rating = document.querySelectorAll('a');
-const submit =document.querySelector('button');
+const rating = document.querySelectorAll('.scale');
+const submit =document.querySelector('#submit');
 const feedback = document.getElementById('feedback-form');
 const thankMessage = document.getElementById('thanks-message');
 const displayrating = document.querySelector('span');
@@ -17,5 +17,6 @@ for(let ratebtn of rating){
         rating.forEach((r)=>r.classList.remove('clicked'));
         ratebtn.classList.add('clicked');
         rated = ratebtn.textContent;
+        console.log(ratebtn.textContent)
     })
 }

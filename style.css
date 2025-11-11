@@ -51,26 +51,27 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
-li a{
+li button{
     background-color: hsl(215, 20%, 25%);
     padding: 0.85rem 1.15rem;
     border-radius: 100px;
     color: white;
     text-decoration: none;
-    font-size: bold;
+    font-weight: 700;
+    border: 0;
 }
 ul > li:first-child a {
     padding: 0.85rem 1.27rem;
 }
-a:hover{
+li button:hover{
     background-color: white;
     color: var(--Grey900);
 }
-a.clicked{
+button.clicked{
     background-color: var(--Orange500);
     color: var(--Grey900);
 }
-button{
+#submit{
     padding: 1rem 0;
     border-radius: 100px;
     background-color: var(--Orange500);
@@ -80,7 +81,7 @@ button{
     letter-spacing: 2px;
     box-shadow: 5px 5px 80px rgba(26, 22, 22, 0.822);
 }
-button:hover{
+#submit:hover{
     background-color: white;
     letter-spacing: 2px;
 }
@@ -91,7 +92,7 @@ button:hover{
 }
 .thanks-image > img{
     width: 50%;
-    border-radius: none;
+    border-radius: 0;
     background-color: transparent;
 }
 #rated{
